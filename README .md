@@ -21,6 +21,7 @@ It demonstrates fundamental image processing concepts including:
 * Image sampling (resolution analysis)
 * Image quantization (gray-level reduction)
 * Visual comparison and quality observation
+* Text Extraction from image 
 
 The system helps analyze how resolution and gray-level depth affect text clarity, readability, and OCR suitability.
 
@@ -44,7 +45,7 @@ The system helps analyze how resolution and gray-level depth affect text clarity
 * Save outputs automatically
 * Generate a single comparison figure
 * Print analysis observations
-
+* The main objective of this project is to develop a system that can scan images of text documents and extract the text automatically using OCR technology. This helps in digitizing printed or handwritten documents efficiently.
 ---
 
 ## Technologies Used
@@ -53,13 +54,19 @@ The system helps analyze how resolution and gray-level depth affect text clarity
 * OpenCV
 * NumPy
 * Matplotlib
+* Python 3.x – Programming language for the project.
+Pillow (PIL) – Library to open, display, and process images.
+ EasyOCR – For extracting text from images.
+ EasyOCR (Python library, no external installation required).
+
+os – To handle file saving and directories.
 
 ---
 
 ## Installation Instructions
 
 Install required libraries:
-
+pip install pytesseract pillow tkinter easyocr -- for easyocr
 ```bash
 pip install opencv-python numpy matplotlib
 ```
